@@ -120,9 +120,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
                   horizontal: 55.0
@@ -142,6 +141,30 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontSize: 20.0,
                         color: Colors.indigo
                       )
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const ListTile(
+                      leading: Icon(Icons.album),
+                      title: Text('The Enchanted Nightingale'),
+                      subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+                    ),
+                    ButtonBar(
+                      children: <Widget>[
+                        FlatButton(
+                          child: const Text('BUY TICKETS'),
+                          onPressed: () { /* ... */ },
+                        ),
+                        FlatButton(
+                          child: const Text('LISTEN'),
+                          onPressed: () { /* ... */ },
+                        ),
+                      ],
                     ),
                   ],
                 ),
