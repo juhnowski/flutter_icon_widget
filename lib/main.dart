@@ -126,23 +126,26 @@ class _MyHomePageState extends State<MyHomePage> {
                   vertical: 10.0,
                   horizontal: 55.0
                 ),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                        Icons.email,
-                        color: Colors.indigo,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      "juhnowski@gmail.com",
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.indigo
-                      )
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                          Icons.email,
+                          color: Colors.indigo,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        "juhnowski@gmail.com",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.indigo
+                        )
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Card(
